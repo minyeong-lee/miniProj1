@@ -1,0 +1,23 @@
+body, h1, h2, h3, h4, h5, h6, p, a:not(.logo-text), button, .btn {
+    font-family: 'Inter', sans-serif;
+}
+
+.logo-text {
+    color: white;
+    text-decoration: none;
+    font-family: 'Audiowide', sans-serif;
+    font-size: 1.5rem; /* 로고 텍스트 크기 조정 */
+}
+
+.header {
+    background-color: #006400; /* 딥그린 색상 */
+}
+
+.footer {
+    background-color: #f4f4f4; /* 연한 회색 */
+    color: #333;
+    text-align: center;
+    border-top: 2px solid #e4e4e4; /* 연한 회색 선 */
+    padding: 10px 0;
+    margin-top: 20px;
+}

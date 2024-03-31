@@ -14,7 +14,7 @@ public class UserDAO {
 			
 			//2. DB 연결
 			conn = DriverManager.getConnection(
-					"jdbc:mariadb://localhost:3306/",
+					"jdbc:mariadb://localhost:3306/miniproj-db",
 					"BITUSER",
 					"1004"
 			);

@@ -23,7 +23,7 @@
   
   	<servlet>
 		<servlet-name>boardServlet</servlet-name>
-		<servlet-class>com.board.BoardServlet</servlet-class>
+		<servlet-class>com.board.servlet.BoardServlet</servlet-class>
 	</servlet>
 	
 	<servlet-mapping>
@@ -41,14 +41,4 @@
 		<url-pattern>/index.do</url-pattern>
 	</servlet-mapping>	
 	
-  	<servlet>
-		<servlet-name>firmServlet</servlet-name>
-		<servlet-class>com.common.FirmServlet</servlet-class>
-	</servlet>
-	
-	<servlet-mapping>
-		<servlet-name>firmServlet</servlet-name>
-		<url-pattern>/firm.do</url-pattern>
-	</servlet-mapping>	
-  
 </web-app>
