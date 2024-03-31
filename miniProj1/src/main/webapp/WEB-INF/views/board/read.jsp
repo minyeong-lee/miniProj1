@@ -33,7 +33,7 @@
             myFetch("board.do", "viewForm", json => {
                 if(json.status == 0) {
                     alert("게시물 정보를 삭제 하였습니다");
-                    location.href = "views/board/list.jsp";
+                    location.href = "board.do?action=list";
                 } else {
                     alert(json.statusMessage);
                 }
@@ -53,7 +53,7 @@
         <input type="hidden" name="bno" value="${board.bno}">
         <input type="button" value="삭제" onclick="jsDelete()">
         <input type="button" value="수정" onclick="jsUpdateForm()">
-        <input type="button" value="목록" onclick="location.href='views/board/list.jsp'">
+        <input type="button" value="목록" onclick="location.href='board.do?action=list'">
     </form>     
 </body>
 </html>

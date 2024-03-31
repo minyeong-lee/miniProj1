@@ -34,7 +34,7 @@ public class BoardController {
 		return "list";
 	}
 
-	public String read(HttpServletRequest request, BoardVO board) throws ServletException, IOException {
+	public Object read(HttpServletRequest request, BoardVO board) throws ServletException, IOException {
 		System.out.println("상세보기");
 		//1. 처리
 		board = boardService.read(board);
@@ -61,7 +61,7 @@ public class BoardController {
 		return map;
 	}
 	
-	public String updateForm(HttpServletRequest request, BoardVO board) throws ServletException, IOException {
+	public Object updateForm(HttpServletRequest request, BoardVO board) throws ServletException, IOException {
 		System.out.println("수정화면");
 		
 		//1. 처리
