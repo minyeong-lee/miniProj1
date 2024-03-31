@@ -29,8 +29,8 @@
         </div>
         <div>
             <c:if test="${!isLoggedIn}">
-                <a href="login.jsp" class="btn btn-outline-light m-2">로그인</a>
-                <a href="signup.jsp" class="btn btn-outline-light m-2">회원가입</a>
+                <a href="user.do?action=loginForm" class="btn btn-outline-light m-2">로그인</a>
+                <a href="user.do?action=insertForm" class="btn btn-outline-light m-2">회원가입</a>
             </c:if>
             <c:if test="${isLoggedIn}">
                 <a href="logout.jsp" class="btn btn-outline-light m-2">로그아웃</a>

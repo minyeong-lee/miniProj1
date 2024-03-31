@@ -26,7 +26,7 @@
         <label>내용 : </label><input type="text" id="bcontent" name="bcontent" required="required"><br/>
         <label>작성자 : </label><input type="text" id="userId" name="userId" required="required"><br/>
     <div>
-        <button onclick="jsInsert()">등록</button>
+        <button type="button" onclick="jsInsert(event)">등록</button>
         <a href="board.do?action=list">취소</a>
     </div>
     </form>
@@ -35,7 +35,12 @@
     const bcontent = document.getElementById("bcontent");
     const userId = document.getElementById("userId");
 	
-    function jsInsert() {
+    function jsInsert(event) {
+    	//이벤트 객체가 제공되면 기본 동작을 방지
+    	if (event) {
+    		event.preventDefault();
+    	}
+    	
     	const param = {
     			action:"insert",
     			btitle: btitle.value,

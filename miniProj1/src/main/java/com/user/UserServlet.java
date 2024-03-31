@@ -1,4 +1,4 @@
-package com.users;
+package com.user;
 
 import java.io.IOException;
 

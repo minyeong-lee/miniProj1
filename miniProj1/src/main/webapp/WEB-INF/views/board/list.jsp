@@ -33,8 +33,21 @@
             background-color: #f5f5f5;
         }
     </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+<header class="header py-3"> <!-- 조정된 padding -->
+    <div class="container d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center"> <!-- 로고와 메뉴를 한 줄에 배치 -->
+            <div class="header-logo mr-3"> <!-- 로고 오른쪽에 여백 추가 -->
+                <a href="http://localhost:8090/miniProj1/" class="logo-text">
+                    Taste<br>Ming
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
 	<h1>게시물 목록</h1>
 	  
     <form id="searchForm" action="board.do" method="post" >
