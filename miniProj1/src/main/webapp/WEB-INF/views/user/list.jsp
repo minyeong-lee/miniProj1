@@ -36,31 +36,30 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-<header class="header py-3"> <!-- 조정된 padding -->
-    <div class="container d-flex justify-content-between align-items-center">
-        <div class="d-flex align-items-center"> <!-- 로고와 메뉴를 한 줄에 배치 -->
-            <div class="header-logo mr-3"> <!-- 로고 오른쪽에 여백 추가 -->
-                <a href="index.jsp" class="logo-text">
-                    Taste<br>Ming
-                </a>
+    <header class="header py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+                <div class="header-logo mr-3">
+                    <a href="index.jsp" class="logo-text">
+                        Taste<br>Ming
+                    </a>
+                </div>
+                <nav class="header-menu">
+                    <a href="views/aboutFirm.html" class="btn btn-outline-light m-2">회사소개</a>
+                    <a href="board.do?action=list" class="btn btn-outline-light m-2">게시물</a>
+                </nav>
             </div>
-            <nav class="header-menu">
-                <a href="views/aboutFirm.html" class="btn btn-outline-light m-2">회사소개</a>
-                <a href="board.do?action=list" class="btn btn-outline-light m-2">게시물</a>
-            </nav>
+            <div>
+                <c:if test="${!isLoggedIn}">
+                    <a href="user.do?action=loginForm" class="btn btn-outline-light m-2">로그인</a>
+                    <a href="user.do?action=insertForm" class="btn btn-outline-light m-2">회원가입</a>
+                </c:if>
+                <c:if test="${isLoggedIn}">
+                    <a href="logout.jsp" class="btn btn-outline-light m-2">로그아웃</a>
+                </c:if>
+            </div>
         </div>
-        <div>
-            <c:if test="${!isLoggedIn}">
-                <a href="user.do?action=loginForm" class="btn btn-outline-light m-2">로그인</a>
-                <a href="user.do?action=insertForm" class="btn btn-outline-light m-2">회원가입</a>
-            </c:if>
-            <c:if test="${isLoggedIn}">
-                <a href="logout.jsp" class="btn btn-outline-light m-2">로그아웃</a>
-            </c:if>
-        </div>
-    </div>
-</header>
+    </header>
 	<h1>회원목록</h1>
 	  
     <form id="searchForm" action="list.jsp" method="get" >

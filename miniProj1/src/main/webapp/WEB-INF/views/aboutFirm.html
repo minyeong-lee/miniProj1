@@ -1,10 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>회사 소개</title>
+    <meta charset="UTF-8">
+    <title>회사소개 - Taste Ming</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Google Fonts (Inter and Audiowide) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<h1>회사 소개 페이지</h1>
+
+<header class="header py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+            <div class="header-logo mr-3">
+                <a href="index.jsp" class="logo-text">
+                    Taste<br>Ming
+                </a>
+            </div>
+            <nav class="header-menu">
+                <a href="views/aboutFirm.html" class="btn btn-outline-light m-2">회사소개</a>
+                <a href="board.do?action=list" class="btn btn-outline-light m-2">게시물</a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<main class="container text-center my-5">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="display-4">찐 맛집 추천 서비스, Taste Ming</h1>
+            <p class="lead mt-4">경험과 데이터를 기반으로 한<br>찐 맛집 추천 서비스를 제공합니다.</p>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container text-center">
+        <p>© 2024 Taste Ming. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>
