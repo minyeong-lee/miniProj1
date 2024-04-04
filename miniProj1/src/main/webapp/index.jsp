@@ -16,14 +16,14 @@
 
 <header class="header py-3"> <!-- 조정된 padding -->
     <div class="container d-flex justify-content-between align-items-center">
-        <div class="d-flex align-items-center"> <!-- 로고와 메뉴를 한 줄에 배치 -->
-            <div class="header-logo mr-3"> <!-- 로고 오른쪽에 여백 추가 -->
+        <div class="d-flex align-items-center"> 
+            <div class="header-logo mr-3"> 
                 <a href="index.jsp" class="logo-text">
                     Taste<br>Ming
                 </a>
             </div>
             <nav class="header-menu">
-                <a href="views/aboutFirm.html" class="btn btn-outline-light m-2">회사소개</a>
+                <a href="aboutFirm.html" class="btn btn-outline-light m-2">회사소개</a>
                 <a href="board.do?action=list" class="btn btn-outline-light m-2">게시물</a>
             </nav>
         </div>
